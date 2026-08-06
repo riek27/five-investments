@@ -8,8 +8,6 @@ export default async function ServicesPage() {
   if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 
   const hero = data.hero || {};
-  // … rest of JSX
-}
   const intro = data.intro || {};
   const services = data.services || {};
   const industries = data.industries || {};
