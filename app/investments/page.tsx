@@ -1,15 +1,27 @@
-import { get } from '@vercel/global-config';
+import { createClient } from 'redis';
 import Link from 'next/link';
+
+let redis: any;
+
+async function getClient() {
+  if (!redis) {
+    redis = await createClient({ url: process.env.REDIS_URL }).connect();
+  }
+  return redis;
+}
 
 export const dynamic = 'force-dynamic';
 
 export default async function InvestmentsPage() {
-  const data: any = await get('investments');
+  const client = await getClient();
+  const raw = await client.get('investments');
+  const data: any = raw ? JSON.parse(raw) : null;
 
   if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 
   const hero = data.hero || {};
   const intro = data.intro || {};
+  // … rest of the page stays exactly the same
   const pillars = data.pillars || {};
   const additionalAreas = data.additionalAreas || {};
   const whyInvest = data.whyInvest || {};

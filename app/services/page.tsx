@@ -1,10 +1,21 @@
-import { get } from '@vercel/global-config';
+import { createClient } from 'redis';
 import Link from 'next/link';
+
+let redis: any;
+
+async function getClient() {
+  if (!redis) {
+    redis = await createClient({ url: process.env.REDIS_URL }).connect();
+  }
+  return redis;
+}
 
 export const dynamic = 'force-dynamic';
 
 export default async function ServicesPage() {
-  const data: any = await get('services');
+  const client = await getClient();
+  const raw = await client.get('services');
+  const data: any = raw ? JSON.parse(raw) : null;
 
   if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 
@@ -16,6 +27,7 @@ export default async function ServicesPage() {
   const process = data.process || {};
   const faq = data.faq || {};
   const cta = data.callToAction || {};
+  // … existing JSX
 
   return (
     <>
