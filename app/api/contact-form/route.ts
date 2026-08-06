@@ -1,13 +1,23 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import { get } from '@vercel/global-config';
+import { createClient } from 'redis';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-// Helper: read the recipient email from the Global Config KV store
+let redis: any;
+
+async function getClient() {
+  if (!redis) {
+    redis = await createClient({ url: process.env.REDIS_URL }).connect();
+  }
+  return redis;
+}
+
 async function getRecipientEmail(): Promise<string> {
-  const homepageData: any = await get('homepage');
-  return homepageData?.contact?.email || 'info@fiveinvestment-ss.com';
+  const client = await getClient();
+  const homepageData = await client.get('homepage');
+  const parsed = homepageData ? JSON.parse(homepageData) : {};
+  return parsed?.contact?.email || 'info@fiveinvestment-ss.com';
 }
 
 export async function POST(request: Request) {
@@ -22,7 +32,7 @@ export async function POST(request: Request) {
     const recipientEmail = await getRecipientEmail();
 
     await resend.emails.send({
-      from: 'onboarding@resend.dev',   // change after domain verification
+      from: 'onboarding@resend.dev',
       to: recipientEmail,
       subject: subject || `New inquiry from ${name}`,
       html: `
