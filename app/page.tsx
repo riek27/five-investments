@@ -4,6 +4,6 @@ import { kv } from '@vercel/kv';
 export const dynamic = 'force-dynamic';
 
 export default async function Page() {
-  const data = await kv.get('homepage');
+  const data: any = await kv.get('homepage');
   return <HomePage data={data} />;
 }

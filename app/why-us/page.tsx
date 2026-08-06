@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const dynamic = 'force-dynamic';
 
 export default async function WhyUsPage() {
-  const data = await kv.get('whyus');
+  const data: any = await kv.get('whyus');
   if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 
   const hero = data.hero || {};

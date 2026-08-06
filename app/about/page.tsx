@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const dynamic = 'force-dynamic';
 
 export default async function AboutPage() {
-  const data = await kv.get('about');
+  const data: any = await kv.get('about');
 
   if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 

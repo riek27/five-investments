@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const dynamic = 'force-dynamic';
 
 export default async function InvestmentsPage() {
-  const data = await kv.get('investments');
+  const data: any = await kv.get('investments');
   if (!data) return <div>Error loading page</div>;
 
   const hero = data.hero || {};
