@@ -1,0 +1,253 @@
+{
+  "hero": {
+    "tagline": "★ Under Promise & Over Deliver ★",
+    "heading": "Building South Sudan\nThrough Investment & Innovation",
+    "subheading": "Five Investment Limited is a proudly South Sudanese-owned company delivering excellence in Construction, Procurement, Agriculture, Import/Export, and Light Agro-Industries across the nation.",
+    "backgroundImage": "/uploads/1785999349392-fivein.jpeg",
+    "stats": [
+      {
+        "number": "11+",
+        "label": "Years of Excellence"
+      },
+      {
+        "number": "5",
+        "label": "Investment Pillars"
+      },
+      {
+        "number": "100%",
+        "label": "Client Commitment"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "A Proudly South Sudanese Enterprise",
+    "incorporationDate": "17th October 2013",
+    "backgroundText": "Five Investment Limited (FIL) is a South Sudanese owned company, incorporated on 17th October 2013. The name \"Five\" represents five major areas of investments...",
+    "fivePillars": [
+      "Procurement and Supplies",
+      "Construction – Roads",
+      "Agriculture and Food Security",
+      "Import and Export",
+      "Establishment of Light Agro-industries"
+    ],
+    "currentlyEngaged": [
+      "Procurement & Supplies",
+      "Construction",
+      "Agriculture",
+      "Mining & Mineral Exploitation"
+    ],
+    "mottoText": "Under Promise and Over Deliver",
+    "mottoDescription": "As a policy, we shall not apply to works beyond our capacity to deliver since this will undermine our principle.",
+    "vision": "To be the most reliable, honest and caring goods and service provider in South Sudan and beyond.",
+    "mission": "To appreciate best practice and embrace knowledge, value people and satisfy their needs.",
+    "coreValues": [
+      "Honesty",
+      "Integrity",
+      "Team Work",
+      "Communication",
+      "Love"
+    ],
+    "image": "/images/fivein1.jpeg",
+    "stats": [
+      {
+        "number": "11+",
+        "label": "Years of Excellence"
+      },
+      {
+        "number": "5",
+        "label": "Investment Pillars"
+      },
+      {
+        "number": "100%",
+        "label": "Client Commitment"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Our Expertise",
+    "title": "Professional Services",
+    "description": "Delivering quality solutions with integrity, precision, and a commitment to exceeding expectations across every sector we serve.",
+    "construction": {
+      "title": "Construction",
+      "items": [
+        "Roads & Bridges Construction",
+        "Construction of Houses & Buildings",
+        "General Construction Services",
+        "Architectural Drawing & Design",
+        "Metal Works & Fabrication",
+        "Hire of Transport Services",
+        "Equipment & Machinery Hire"
+      ]
+    },
+    "procurement": {
+      "title": "Procurement",
+      "items": [
+        "Supply & Printing of Visibility Materials",
+        "Supply of Food & Non-Food Items",
+        "Supply of Agricultural Inputs (Seeds & Tools)",
+        "Supply of Hygiene & Household Materials",
+        "Supply of Office Furniture",
+        "Supply of Toyota Spare Parts",
+        "Office Stationery Supplies"
+      ]
+    },
+    "agriculture": {
+      "title": "Agriculture",
+      "items": [
+        "Agriculture & Food Security Programs",
+        "Agricultural Input Supply",
+        "Light Agro-Industries Development",
+        "Farming Equipment & Machinery",
+        "Agricultural Planning & Advisory"
+      ]
+    },
+    "other": {
+      "title": "Other Services",
+      "items": [
+        "Mining & Mineral Exploitation",
+        "Tourism & Environmental Protection",
+        "Management & Sustainability",
+        "Import & Export of Goods",
+        "Hire of Transport Services"
+      ]
+    }
+  },
+  "whyUs": {
+    "eyebrow": "The 5IL Advantage",
+    "title": "Why Choose Five Investment Limited",
+    "description": "We combine honesty, integrity, and expertise to deliver solutions that exceed expectations.",
+    "items": [
+      {
+        "icon": "🏆",
+        "title": "Under Promise & Over Deliver",
+        "text": "Our motto is our policy. We only commit to what we can deliver and always strive to exceed expectations."
+      },
+      {
+        "icon": "🤝",
+        "title": "Honesty & Integrity",
+        "text": "Established on the principles of transparency and ethical dealings with all clients and partners."
+      },
+      {
+        "icon": "👥",
+        "title": "Teamwork Excellence",
+        "text": "Every team member contributes to project success, ensuring acceptable results for our clients."
+      },
+      {
+        "icon": "⏰",
+        "title": "Time-Conscious Delivery",
+        "text": "Time is a crucial component of our operations. We respect deadlines and deliver promptly."
+      },
+      {
+        "icon": "📍",
+        "title": "Strong Local Presence",
+        "text": "Based in Rock City, Juba, with deep local market knowledge and understanding."
+      },
+      {
+        "icon": "📋",
+        "title": "UN Registered & Certified",
+        "text": "Registered with UNGM (389997) and National Revenue Directorate. Fully compliant."
+      }
+    ]
+  },
+  "team": {
+    "eyebrow": "Our Team",
+    "title": "Company Structure",
+    "description": "A well-organized team ensuring efficient project delivery and professional management at every level.",
+    "leadership": [
+      {
+        "icon": "👔",
+        "title": "Managing Director",
+        "subtitle": "LEADERSHIP"
+      },
+      {
+        "icon": "⚙️",
+        "title": "Operational Manager",
+        "subtitle": "OPERATIONS"
+      },
+      {
+        "icon": "📊",
+        "title": "Project Manager",
+        "subtitle": "PROJECTS"
+      },
+      {
+        "icon": "🛡️",
+        "title": "Health & Safety Officer",
+        "subtitle": "HSE"
+      }
+    ],
+    "members": [
+      "Project Engineer",
+      "Site Camp Manager",
+      "Workshop Manager",
+      "Site Engineers",
+      "Site Surveyor",
+      "Equipment Operators",
+      "Site Foreman",
+      "Field Engineers",
+      "Unskilled Labourers"
+    ]
+  },
+  "legal": {
+    "eyebrow": "Credentials",
+    "title": "Legal Documents & Certifications",
+    "description": "Fully registered, certified, and compliant with all regulatory requirements in South Sudan.",
+    "items": [
+      {
+        "icon": "fa-globe",
+        "title": "United Nations Registration",
+        "text": "Registered with the United Nations Global Marketplace (UNGM).",
+        "number": "UNGM: 389997",
+        "file": "/uploads/1785939690708-461193318_857528916524810_2767405075224207253_n.jpg"
+      },
+      {
+        "icon": "fa-building-columns",
+        "title": "Tax Identification Number (TIN)",
+        "text": "Registered with the Directorate of National Revenue under the Taxation Act 2009.",
+        "number": "TIN: 123-456-789",
+        "file": "assets/profile2.jpg"
+      },
+      {
+        "icon": "fa-file-lines",
+        "title": "Company Incorporation",
+        "text": "Officially incorporated in South Sudan on 17th October 2013.",
+        "number": "17 Oct 2013",
+        "file": "assets/profile3.jpg"
+      },
+      {
+        "icon": "fa-certificate",
+        "title": "Tax Compliance Certificate",
+        "text": "Holds valid Tax Compliance Certificate issued by the National Revenue Authority.",
+        "number": "Compliant ✓",
+        "file": "assets/profile4.jpg"
+      },
+      {
+        "icon": "fa-file-signature",
+        "title": "Sample Contracts & MOUs",
+        "text": "Extensive portfolio of successfully executed contracts with government and NGOs.",
+        "number": "Proven Track Record",
+        "file": "assets/profile5.jpg"
+      },
+      {
+        "icon": "fa-book",
+        "title": "Equipment Logbooks",
+        "text": "Maintains comprehensive logbooks for all owned machinery and equipment.",
+        "number": "Documented",
+        "file": "assets/profile6.jpg"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get In Touch",
+    "title": "Ready to Start Your Next Project?",
+    "description": "Whether you need construction services, procurement solutions, or agricultural support — Five Investment Limited is your trusted partner in South Sudan.",
+    "phoneNumbers": [
+      "+211 922 627 256",
+      "+211 925 811 998"
+    ],
+    "email": "info@fiveinvestment-ss.com",
+    "website": "www.fiveinvestment-ss.com",
+    "location": "Gudele 2 , Shar Betri Road, Juba, South Sudan",
+    "registration": "UNGM: 389997 | DU Number: 989994234"
+  }
+}

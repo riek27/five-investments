@@ -1,0 +1,284 @@
+{
+  "hero": {
+    "eyebrow": "What We Offer",
+    "title": "Professional Services",
+    "subtitle": "Delivering reliable construction, procurement, agricultural, and industrial solutions across South Sudan with quality, integrity, and professionalism.",
+    "backgroundImage": "images/fivein3.jpeg"
+  },
+  "intro": {
+    "eyebrow": "Our Capabilities",
+    "title": "Comprehensive Business Solutions",
+    "text": "Five Investment Limited provides professional services to government institutions, NGOs, private companies, development partners, and communities throughout South Sudan. Our experienced team delivers high-quality solutions with a strong commitment to safety, efficiency, and client satisfaction."
+  },
+  "services": {
+    "eyebrow": "What We Provide",
+    "title": "Our Services",
+    "description": "Explore our complete range of services, each delivered with expertise and dedication.",
+    "items": [
+      {
+        "icon": "🏗️",
+        "title": "General Construction",
+        "description": "We deliver quality construction projects ranging from residential buildings to major infrastructure developments.",
+        "list": [
+          "Roads Construction",
+          "Bridge Construction",
+          "Residential Buildings",
+          "Commercial Buildings",
+          "Office Buildings",
+          "Renovation Works",
+          "Civil Engineering",
+          "Site Preparation"
+        ]
+      },
+      {
+        "icon": "🏢",
+        "title": "Architectural Design & Engineering",
+        "description": "Professional planning and design services tailored to every project.",
+        "list": [
+          "Architectural Drawings",
+          "Structural Design",
+          "Site Planning",
+          "Engineering Consultation",
+          "Construction Supervision"
+        ]
+      },
+      {
+        "icon": "📦",
+        "title": "Procurement & Supply",
+        "description": "Reliable procurement and delivery of quality goods for government, NGOs, and private organizations.",
+        "list": [
+          "Food Supplies",
+          "Non-Food Items",
+          "Office Furniture",
+          "Office Stationery",
+          "Visibility Materials & Printing",
+          "Hygiene Materials",
+          "Agricultural Inputs",
+          "Toyota Spare Parts"
+        ]
+      },
+      {
+        "icon": "🌾",
+        "title": "Agriculture & Food Security",
+        "description": "Supporting sustainable agriculture and food security initiatives across South Sudan.",
+        "list": [
+          "Agricultural Inputs",
+          "Seeds & Farming Tools",
+          "Farm Equipment",
+          "Agricultural Advisory",
+          "Food Security Programs",
+          "Farming Support"
+        ]
+      },
+      {
+        "icon": "🚛",
+        "title": "Transport & Logistics",
+        "description": "Efficient transportation and logistics solutions for projects of all sizes.",
+        "list": [
+          "Material Transportation",
+          "Equipment Transportation",
+          "Fleet Services",
+          "Delivery Services",
+          "Logistics Coordination"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "Equipment & Machinery Hire",
+        "description": "Construction equipment available for short‑term and long‑term projects.",
+        "list": [
+          "Heavy Machinery",
+          "Earth Moving Equipment",
+          "Construction Equipment",
+          "Machinery Operators"
+        ]
+      },
+      {
+        "icon": "🌍",
+        "title": "Import & Export",
+        "description": "Professional import and export services supporting businesses across South Sudan.",
+        "list": [
+          "Import Coordination",
+          "Export Documentation",
+          "Customs Support",
+          "International Trade"
+        ]
+      },
+      {
+        "icon": "🏭",
+        "title": "Light Agro-Industries",
+        "description": "Supporting value addition and agricultural processing.",
+        "list": [
+          "Food Processing",
+          "Agricultural Packaging",
+          "Grain Processing",
+          "Small Manufacturing"
+        ]
+      },
+      {
+        "icon": "⛏️",
+        "title": "Mining & Mineral Services",
+        "description": "Supporting responsible mineral exploration and related operational services.",
+        "list": [
+          "Mineral Exploration Support",
+          "Site Preparation",
+          "Logistics",
+          "Operational Assistance"
+        ]
+      }
+    ]
+  },
+  "industries": {
+    "eyebrow": "Who We Serve",
+    "title": "Industries We Serve",
+    "description": "We work with a diverse range of clients and partners.",
+    "items": [
+      {
+        "icon": "🏛️",
+        "title": "Government Ministries"
+      },
+      {
+        "icon": "🌐",
+        "title": "NGOs"
+      },
+      {
+        "icon": "🇺🇳",
+        "title": "UN Agencies"
+      },
+      {
+        "icon": "🤝",
+        "title": "Humanitarian Organizations"
+      },
+      {
+        "icon": "🏗️",
+        "title": "Construction Companies"
+      },
+      {
+        "icon": "🏢",
+        "title": "Private Businesses"
+      },
+      {
+        "icon": "🎓",
+        "title": "Educational Institutions"
+      },
+      {
+        "icon": "🏘️",
+        "title": "Local Communities"
+      }
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "The FIL Difference",
+    "title": "Why Choose Our Services",
+    "description": "We combine expertise, integrity, and local knowledge to deliver outstanding results.",
+    "items": [
+      {
+        "icon": "👷",
+        "title": "Experienced Professionals"
+      },
+      {
+        "icon": "✅",
+        "title": "Quality Assurance"
+      },
+      {
+        "icon": "⏱️",
+        "title": "Timely Delivery"
+      },
+      {
+        "icon": "💰",
+        "title": "Competitive Pricing"
+      },
+      {
+        "icon": "⚙️",
+        "title": "Modern Equipment"
+      },
+      {
+        "icon": "📍",
+        "title": "Local Market Expertise"
+      },
+      {
+        "icon": "🦺",
+        "title": "Safety & Compliance"
+      },
+      {
+        "icon": "💬",
+        "title": "Honest Communication"
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "How We Work",
+    "title": "Our Service Delivery Process",
+    "description": "A proven approach that ensures every client receives exceptional service.",
+    "steps": [
+      {
+        "title": "Initial Consultation",
+        "text": "We discuss your needs and define the scope of work."
+      },
+      {
+        "title": "Site Assessment",
+        "text": "Our team visits the location to evaluate requirements."
+      },
+      {
+        "title": "Proposal & Quotation",
+        "text": "We provide a detailed proposal and competitive pricing."
+      },
+      {
+        "title": "Planning & Scheduling",
+        "text": "We create a project timeline and allocate resources."
+      },
+      {
+        "title": "Service Delivery",
+        "text": "Our skilled team executes the work to the highest standard."
+      },
+      {
+        "title": "Quality Inspection",
+        "text": "We inspect every deliverable against agreed specifications."
+      },
+      {
+        "title": "Project Handover",
+        "text": "We formally hand over the completed project."
+      },
+      {
+        "title": "Ongoing Support",
+        "text": "We remain available for after‑sales support and maintenance."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Common Questions",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Do you work with NGOs and UN agencies?",
+        "answer": "Yes, we have extensive experience supplying goods and services to humanitarian and development organisations."
+      },
+      {
+        "question": "Do you provide services outside Juba?",
+        "answer": "Absolutely. We operate across all ten states of South Sudan and can deploy teams nationwide."
+      },
+      {
+        "question": "Can you handle large‑scale construction projects?",
+        "answer": "Yes, we have the equipment, skilled workforce, and experience to manage major infrastructure projects."
+      },
+      {
+        "question": "Do you supply goods nationwide?",
+        "answer": "Yes, our procurement and logistics network reaches every region of South Sudan."
+      },
+      {
+        "question": "Can I request a custom quotation?",
+        "answer": "Certainly. Contact us with your requirements and we will prepare a tailored quotation."
+      },
+      {
+        "question": "How quickly can you start a project?",
+        "answer": "Timelines depend on the scope, but we pride ourselves on rapid mobilisation once an agreement is signed."
+      }
+    ]
+  },
+  "callToAction": {
+    "title": "Ready to Work With Five Investment Limited?",
+    "text": "Whether you need construction, procurement, agriculture, logistics, or industrial services, our team is ready to deliver dependable solutions tailored to your needs.",
+    "button1Text": "Request a Free Quote",
+    "button2Text": "Contact Our Team"
+  }
+}

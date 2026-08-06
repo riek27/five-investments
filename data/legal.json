@@ -1,0 +1,244 @@
+{
+  "hero": {
+    "eyebrow": "Compliance & Transparency",
+    "title": "Legal Documents & Compliance",
+    "subtitle": "Committed to transparency, regulatory compliance, and the highest standards of professional business practice in South Sudan.",
+    "backgroundImage": "/images/fivein1.jpeg"
+  },
+  "intro": {
+    "eyebrow": "Our Commitment",
+    "title": "Compliance & Integrity",
+    "text": "Five Investment Limited operates in accordance with the laws of South Sudan and maintains all required registrations, licences, and certifications. We uphold transparency in every engagement."
+  },
+  "legalDocs": {
+    "eyebrow": "Credentials",
+    "title": "Legal Documents & Certifications",
+    "description": "Fully registered, certified, and compliant with all regulatory requirements.",
+    "items": [
+      {
+        "icon": "fa-globe",
+        "title": "United Nations Registration",
+        "text": "Registered with the United Nations Global Marketplace (UNGM).",
+        "number": "UNGM: 389997",
+        "file": "/uploads/1786003140887-Company-docs.pdf"
+      },
+      {
+        "icon": "fa-building-columns",
+        "title": "Tax Identification Number (TIN)",
+        "text": "Registered with the Directorate of National Revenue under the Taxation Act 2009.",
+        "number": "TIN: 123-456-789",
+        "file": "/uploads/1786003276879-nra.pdf"
+      },
+      {
+        "icon": "fa-file-lines",
+        "title": "Company Incorporation",
+        "text": "Officially incorporated in South Sudan on 17th October 2013.",
+        "number": "17 Oct 2013",
+        "file": "/uploads/1786003306849-Certificate of incorporation.pdf"
+      },
+      {
+        "icon": "fa-certificate",
+        "title": "Tax Compliance Certificate",
+        "text": "Holds valid Tax Compliance Certificate issued by the National Revenue Authority.",
+        "number": "Compliant ✓",
+        "file": "/uploads/1786003356580-nra.pdf"
+      },
+      {
+        "icon": "fa-file-signature",
+        "title": "Sample Contracts & MOUs",
+        "text": "Extensive portfolio of successfully executed contracts with government and NGOs.",
+        "number": "Proven Track Record",
+        "file": "/uploads/1786003424951-Juba-Bor highway Contract and completion letter.pdf"
+      },
+      {
+        "icon": "fa-book",
+        "title": "Equipment Logbooks",
+        "text": "Maintains comprehensive logbooks for all owned machinery and equipment.",
+        "number": "Documented",
+        "file": "/uploads/1786003447681-Logbooks and documents of owned  equipments.pdf"
+      }
+    ]
+  },
+  "companyRegistrations": {
+    "eyebrow": "Milestones",
+    "title": "Company Registrations",
+    "description": "Important dates and statuses.",
+    "items": [
+      {
+        "label": "Company Incorporation",
+        "value": "17 October 2013"
+      },
+      {
+        "label": "Business Registration",
+        "value": "Active"
+      },
+      {
+        "label": "Tax Registration",
+        "value": "Registered"
+      },
+      {
+        "label": "UNGM Registration",
+        "value": "UNGM: 389997"
+      },
+      {
+        "label": "Operating Status",
+        "value": "Active"
+      }
+    ]
+  },
+  "complianceStandards": {
+    "eyebrow": "Standards",
+    "title": "Compliance Standards",
+    "description": "We adhere to the highest ethical and legal standards.",
+    "items": [
+      "Government Registered",
+      "Tax Compliant",
+      "Ethical Business Practices",
+      "Transparent Procurement",
+      "Contract Compliance",
+      "Workplace Safety Commitment",
+      "Environmental Responsibility",
+      "Anti-Corruption Commitment"
+    ]
+  },
+  "procurementStandards": {
+    "eyebrow": "Procurement",
+    "title": "Procurement & Contracting Standards",
+    "text": "Our procurement processes are transparent, competitive, and aligned with international best practices. We follow ethical supplier selection, rigorous contract management, and maintain thorough documentation for every engagement."
+  },
+  "hseCommitment": {
+    "eyebrow": "HSE",
+    "title": "Health, Safety & Environmental Commitment",
+    "items": [
+      "Safe working environments",
+      "Staff safety training",
+      "Risk assessments",
+      "Protective equipment (PPE)",
+      "Environmental protection",
+      "Compliance with safety regulations"
+    ]
+  },
+  "corporateGovernance": {
+    "eyebrow": "Governance",
+    "title": "Corporate Governance",
+    "items": [
+      "Professional leadership",
+      "Accountability",
+      "Ethical decision-making",
+      "Internal controls",
+      "Financial responsibility",
+      "Transparent reporting"
+    ]
+  },
+  "companyPolicies": {
+    "eyebrow": "Policies",
+    "title": "Company Policies",
+    "description": "Our internal policies guide our operations and conduct.",
+    "items": [
+      {
+        "title": "Code of Conduct",
+        "file": "/documents/code-of-conduct.pdf"
+      },
+      {
+        "title": "Health & Safety Policy",
+        "file": "/documents/hse-policy.pdf"
+      },
+      {
+        "title": "Environmental Policy",
+        "file": "/documents/environmental-policy.pdf"
+      },
+      {
+        "title": "Anti-Corruption Policy",
+        "file": "/documents/anti-corruption-policy.pdf"
+      },
+      {
+        "title": "Procurement Policy",
+        "file": "/documents/procurement-policy.pdf"
+      },
+      {
+        "title": "Equal Opportunity Policy",
+        "file": "/documents/equal-opportunity-policy.pdf"
+      },
+      {
+        "title": "Quality Assurance Policy",
+        "file": "/documents/quality-policy.pdf"
+      },
+      {
+        "title": "Data Privacy Policy",
+        "file": "/documents/data-privacy-policy.pdf"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Common Questions",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Is Five Investment Limited legally registered?",
+        "answer": "Yes, we are fully incorporated under the laws of South Sudan and hold all required business licences and tax registrations."
+      },
+      {
+        "question": "Can you work with NGOs and UN agencies?",
+        "answer": "Absolutely. We are registered on the UN Global Marketplace (UNGM) and have extensive experience serving humanitarian and development organisations."
+      },
+      {
+        "question": "Can you provide copies of your registration documents?",
+        "answer": "Certainly. Contact us or visit the Download Centre on this page to obtain verified copies."
+      },
+      {
+        "question": "Are your tax documents up to date?",
+        "answer": "Yes, we maintain current tax compliance certificates and file all required returns."
+      },
+      {
+        "question": "Do you sign formal contracts?",
+        "answer": "Yes, every engagement is governed by a legally binding contract or MOU that protects both parties."
+      }
+    ]
+  },
+  "downloadCenter": {
+    "eyebrow": "Downloads",
+    "title": "Download Centre",
+    "description": "Quick access to important documents.",
+    "items": [
+      {
+        "title": "Company Profile",
+        "file": "/uploads/1786003913500-five investment peofile 2024.pdf"
+      },
+      {
+        "title": "Certificate of Incorporation",
+        "file": "/documents/certificate-of-incorporation.pdf"
+      },
+      {
+        "title": "UNGM Registration",
+        "file": "/documents/ungm-registration.pdf"
+      },
+      {
+        "title": "Tax Compliance Certificate",
+        "file": "/documents/tax-compliance-certificate.pdf"
+      },
+      {
+        "title": "TIN Certificate",
+        "file": "/documents/tin-certificate.pdf"
+      },
+      {
+        "title": "Equipment List",
+        "file": "/documents/equipment-list.pdf"
+      },
+      {
+        "title": "Company Brochure",
+        "file": "/documents/company-brochure.pdf"
+      },
+      {
+        "title": "Capability Statement",
+        "file": "/documents/capability-statement.pdf"
+      }
+    ]
+  },
+  "contactVerification": {
+    "eyebrow": "Verification",
+    "title": "Need Additional Documents?",
+    "text": "If you require copies of our legal documents or compliance certificates, please contact our team. We are happy to provide the necessary documentation to support your procurement or due diligence process.",
+    "button1Text": "Request Documents",
+    "button2Text": "Contact Us"
+  }
+}

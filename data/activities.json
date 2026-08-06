@@ -1,0 +1,207 @@
+{
+  "hero": {
+    "eyebrow": "Our Activities",
+    "title": "Our Activities",
+    "subtitle": "Delivering practical solutions that support infrastructure development, economic growth, and community well-being across South Sudan.",
+    "backgroundImage": "images/fivein2.jpeg"
+  },
+  "intro": {
+    "eyebrow": "What We Do",
+    "title": "What We Do",
+    "text": "Five Investment Limited undertakes a wide range of activities that contribute to national development. From construction and procurement to agriculture and logistics, our experienced team works with government institutions, NGOs, private companies, and communities to deliver reliable and sustainable solutions."
+  },
+  "coreActivities": {
+    "eyebrow": "Core Operations",
+    "title": "Core Business Activities",
+    "description": "Our key operational areas, carried out daily across South Sudan.",
+    "items": [
+      {
+        "icon": "🏗️",
+        "title": "Construction Activities",
+        "text": "Road construction, bridge construction, residential & commercial buildings, site preparation, renovation works, and civil engineering."
+      },
+      {
+        "icon": "📦",
+        "title": "Procurement & Supply",
+        "text": "NGO & government procurement, food & non‑food distribution, office furniture & stationery, printing, and hygiene materials."
+      },
+      {
+        "icon": "🌾",
+        "title": "Agricultural Activities",
+        "text": "Commercial farming, food security initiatives, agricultural input distribution, seed supply, and farm equipment support."
+      },
+      {
+        "icon": "🚛",
+        "title": "Logistics & Transport",
+        "text": "Transportation services, equipment transportation, material delivery, fleet management, and machinery hire."
+      },
+      {
+        "icon": "🌍",
+        "title": "Import & Export",
+        "text": "Importation of equipment, construction materials, agricultural machinery, export support, and international trade coordination."
+      },
+      {
+        "icon": "🏭",
+        "title": "Industrial Activities",
+        "text": "Light agro‑industries, food processing, agricultural product packaging, and small‑scale manufacturing."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Our Methodology",
+    "title": "How We Deliver Projects",
+    "description": "A proven, step‑by‑step approach that ensures every project is completed on time and to the highest standard.",
+    "steps": [
+      "Client Consultation",
+      "Planning & Assessment",
+      "Procurement",
+      "Project Execution",
+      "Quality Control",
+      "Project Completion",
+      "Client Support"
+    ]
+  },
+  "sectors": {
+    "eyebrow": "Who We Serve",
+    "title": "Sectors We Serve",
+    "description": "We work with a broad range of partners and clients.",
+    "items": [
+      {
+        "icon": "🏛️",
+        "title": "Government Institutions"
+      },
+      {
+        "icon": "🌐",
+        "title": "NGOs"
+      },
+      {
+        "icon": "🤝",
+        "title": "Humanitarian Organizations"
+      },
+      {
+        "icon": "🏢",
+        "title": "Private Companies"
+      },
+      {
+        "icon": "🏘️",
+        "title": "Communities"
+      },
+      {
+        "icon": "🔗",
+        "title": "Development Partners"
+      }
+    ]
+  },
+  "equipment": {
+    "eyebrow": "Capacity",
+    "title": "Equipment & Operational Capacity",
+    "description": "Our fleet and skilled workforce enable us to handle projects of any scale.",
+    "items": [
+      "Construction Machinery",
+      "Transport Vehicles",
+      "Engineering Equipment",
+      "Survey Equipment",
+      "Agricultural Machinery",
+      "Skilled Workforce"
+    ]
+  },
+  "principles": {
+    "eyebrow": "Our Standards",
+    "title": "Our Working Principles",
+    "description": "The values that guide every project we undertake.",
+    "items": [
+      {
+        "icon": "🦺",
+        "title": "Safety First"
+      },
+      {
+        "icon": "🔨",
+        "title": "Quality Workmanship"
+      },
+      {
+        "icon": "⏱️",
+        "title": "Timely Delivery"
+      },
+      {
+        "icon": "👥",
+        "title": "Teamwork"
+      },
+      {
+        "icon": "🤝",
+        "title": "Integrity"
+      },
+      {
+        "icon": "😊",
+        "title": "Client Satisfaction"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Project Gallery",
+    "description": "A snapshot of our day‑to‑day operations.",
+    "images": [
+      {
+        "url": "/uploads/1786000945475-fivein1.jpeg",
+        "caption": "Road construction"
+      },
+      {
+        "url": "/uploads/1786000930559-fivein.jpeg",
+        "caption": "Building construction"
+      },
+      {
+        "url": "/uploads/1786000961164-WhatsApp Image 2026-08-05 at 12.53.29 PM.jpeg",
+        "caption": "Procurement deliveries"
+      },
+      {
+        "url": "/uploads/1786000973989-WhatsApp Image 2026-08-05 at 12.30.06 PM.jpeg",
+        "caption": "Agricultural field activities"
+      },
+      {
+        "url": "/uploads/1786000990492-WhatsApp Image 2026-08-05 at 12.30.09 PM.jpeg",
+        "caption": "Equipment operations"
+      },
+      {
+        "url": "/uploads/1786001009203-WhatsApp Image 2026-08-05 at 12.30.11 PM.jpeg",
+        "caption": "Site supervision"
+      }
+    ]
+  },
+  "impact": {
+    "eyebrow": "Impact",
+    "title": "Our Operational Impact",
+    "description": "We measure our success through tangible results.",
+    "stats": [
+      {
+        "number": "11+",
+        "label": "Years of Operations"
+      },
+      {
+        "number": "5",
+        "label": "Business Areas"
+      },
+      {
+        "number": "10",
+        "label": "States Covered"
+      },
+      {
+        "number": "50+",
+        "label": "Projects Delivered"
+      },
+      {
+        "number": "100+",
+        "label": "Skilled Personnel"
+      },
+      {
+        "number": "100%",
+        "label": "Reliability"
+      }
+    ]
+  },
+  "callToAction": {
+    "title": "Partner With Five Investment Limited",
+    "text": "Whether your organization requires construction, procurement, agriculture, or logistics support, our experienced team is ready to deliver dependable solutions throughout South Sudan.",
+    "button1Text": "Contact Us",
+    "button2Text": "Request a Quote"
+  }
+}

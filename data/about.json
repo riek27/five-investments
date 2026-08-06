@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "title": "About Us",
+    "subtitle": "Learn more about our story, values, and how we deliver excellence across multiple sectors.",
+    "backgroundImage": "/uploads/1785999701736-fivein.jpeg"
+  },
+  "about": {
+    "eyebrow": "Our Story",
+    "title": "A Proudly South Sudanese Enterprise",
+    "incorporationDate": "17th October 2013",
+    "backgroundText": "Five Investment Limited (FIL) is a South Sudanese owned company, incorporated on 17th October 2013. The name \"Five\" represents five major areas of investments the company endeavors to grow into.",
+    "fivePillars": [
+      "Procurement and Supplies",
+      "Construction – Roads",
+      "Agriculture and Food Security",
+      "Import and Export",
+      "Establishment of Light Agro-industries"
+    ],
+    "currentlyEngaged": [
+      "Procurement & Supplies",
+      "Construction",
+      "Agriculture",
+      "Mining & Mineral Exploitation"
+    ],
+    "mottoText": "Under Promise and Over Deliver",
+    "mottoDescription": "As a policy, we shall not apply to works beyond our capacity to deliver since this will undermine our principle.",
+    "vision": "To be the most reliable, honest and caring goods and service provider in South Sudan and beyond.",
+    "mission": "To appreciate best practice and embrace knowledge, value people and satisfy their needs.",
+    "coreValues": [
+      "Honesty",
+      "Integrity",
+      "Team Work",
+      "Communication",
+      "Love"
+    ],
+    "image": "/uploads/1785999651198-WhatsApp Image 2026-08-05 at 12.53.29 PM.jpeg"
+  },
+  "howWeWork": {
+    "eyebrow": "Our Process",
+    "title": "How We Work",
+    "description": "A simple, transparent approach that ensures every project is delivered on time and to the highest standard.",
+    "steps": [
+      {
+        "icon": "🔍",
+        "title": "Understand",
+        "text": "We listen to your needs and define clear objectives."
+      },
+      {
+        "icon": "📋",
+        "title": "Plan",
+        "text": "We design a tailored strategy with realistic timelines."
+      },
+      {
+        "icon": "⚙️",
+        "title": "Execute",
+        "text": "Our skilled team delivers with precision and care."
+      },
+      {
+        "icon": "✅",
+        "title": "Deliver",
+        "text": "We exceed expectations and provide ongoing support."
+      }
+    ]
+  },
+  "callToAction": {
+    "text": "Ready to Build the Future?",
+    "buttonText": "Contact Us Today",
+    "buttonLink": "/contact"
+  }
+}

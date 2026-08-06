@@ -1,0 +1,121 @@
+{
+  "hero": {
+    "eyebrow": "Get In Touch",
+    "title": "Contact Us",
+    "subtitle": "We're here to answer your questions, discuss your project, and provide professional solutions tailored to your needs.",
+    "backgroundImage": "/uploads/1786004711661-fivein.jpeg"
+  },
+  "contactInfo": {
+    "eyebrow": "Reach Out",
+    "title": "Contact Information",
+    "address": "Gudele 2, Shar Betri Road, Juba, South Sudan",
+    "phones": [
+      "+211 922 627 256",
+      "+211 925 811 998"
+    ],
+    "email": "info@fiveinvestment-ss.com",
+    "website": "www.fiveinvestment-ss.com",
+    "workingHours": "Monday – Friday: 8:00 AM – 5:00 PM\nSaturday: 9:00 AM – 1:00 PM\nSunday: Closed",
+    "emergencyPhone": "+211 922 627 256",
+    "emergencyEmail": "info@fiveinvestment-ss.com"
+  },
+  "form": {
+    "eyebrow": "Send a Message",
+    "title": "Send Us a Message",
+    "description": "Fill out the form below and we'll get back to you promptly.",
+    "services": [
+      "Construction",
+      "Procurement",
+      "Agriculture",
+      "Import & Export",
+      "Equipment Hire",
+      "General Inquiry",
+      "Partnership Opportunity",
+      "Other"
+    ],
+    "submitButtonText": "Send Message →"
+  },
+  "map": {
+    "eyebrow": "Our Location",
+    "title": "Office Location",
+    "address": "Gudele 2, Shar Betri Road, Juba, South Sudan",
+    "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.736614541895!2d31.5715!3d4.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDUxJzAwLjAiTiAzMcKwMzQnMTcuNCJF!5e0!3m2!1sen!2s!4v1690000000000"
+  },
+  "whyContactUs": {
+    "eyebrow": "Why Reach Out",
+    "title": "Why Contact Us?",
+    "items": [
+      "Fast Response",
+      "Professional Advice",
+      "Free Consultation",
+      "Customized Solutions",
+      "Experienced Team",
+      "Reliable Service"
+    ]
+  },
+  "responseCommitment": {
+    "eyebrow": "Our Promise",
+    "title": "Our Response Commitment",
+    "text": "We aim to respond to all inquiries within 24 hours. Whether you need a quotation, project consultation, or additional information, our team is ready to assist you with professionalism and efficiency."
+  },
+  "faq": {
+    "eyebrow": "Quick Answers",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "How can I request a quotation?",
+        "answer": "Simply fill out the contact form or call us directly. We'll prepare a tailored quotation based on your requirements."
+      },
+      {
+        "question": "Do you work outside Juba?",
+        "answer": "Yes, we operate across all ten states of South Sudan and can mobilise teams nationwide."
+      },
+      {
+        "question": "Can you work with NGOs and UN agencies?",
+        "answer": "Absolutely. We are registered with UNGM and have extensive experience serving humanitarian and development organisations."
+      },
+      {
+        "question": "How long does it take to receive a response?",
+        "answer": "We respond to most inquiries within a few hours during business hours, and within 24 hours at the latest."
+      },
+      {
+        "question": "Can I schedule a meeting with your team?",
+        "answer": "Yes, we welcome in-person or virtual meetings. Contact us to arrange a convenient time."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Our Office",
+    "title": "See Our Operations",
+    "description": "A glimpse into our workplace and team.",
+    "images": [
+      {
+        "url": "/uploads/1786005172313-fivein.jpeg",
+        "caption": "Our office in Juba"
+      },
+      {
+        "url": "/uploads/1786005191693-fivein1.jpeg",
+        "caption": "Team meeting"
+      },
+      {
+        "url": "/uploads/1786005271156-fivein2.jpeg",
+        "caption": "Equipment fleet"
+      },
+      {
+        "url": "/uploads/1786005301529-fivein3.jpeg",
+        "caption": "Site operations"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Let's Build Something Great Together",
+    "text": "Whether you're planning a construction project, need procurement support, or want to explore partnership opportunities, Five Investment Limited is ready to help.",
+    "button1Text": "Request a Quote",
+    "button2Text": "Call Now"
+  },
+  "downloadProfile": {
+    "enabled": true,
+    "file": "/documents/company-profile.pdf",
+    "text": "Download Company Profile"
+  }
+}

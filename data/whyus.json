@@ -1,0 +1,191 @@
+{
+  "hero": {
+    "eyebrow": "The FIL Advantage",
+    "title": "Why Choose Five Investment Limited",
+    "subtitle": "Your trusted partner for construction, procurement, agriculture, and sustainable development in South Sudan.",
+    "backgroundImage": "/uploads/1785947057927-aroadagr.jpg"
+  },
+  "intro": {
+    "eyebrow": "Building Trust",
+    "title": "Building Trust Through Excellence",
+    "text": "Since our establishment in 2013, Five Investment Limited has been committed to delivering reliable, high-quality services with honesty, professionalism, and a client-first approach. Our reputation is built on integrity, timely delivery, and lasting partnerships."
+  },
+  "whyClients": {
+    "eyebrow": "What Sets Us Apart",
+    "title": "Why Clients Choose Us",
+    "description": "We bring more to the table than just services – we bring commitment.",
+    "cards": [
+      {
+        "icon": "🏆",
+        "title": "Proven Experience",
+        "text": "More than a decade of experience serving government institutions, NGOs, private companies, and communities across South Sudan."
+      },
+      {
+        "icon": "🤝",
+        "title": "Honesty & Integrity",
+        "text": "We conduct every project with transparency, accountability, and ethical business practices."
+      },
+      {
+        "icon": "⏱️",
+        "title": "Timely Project Delivery",
+        "text": "We understand that time matters. Our team is committed to completing projects efficiently while maintaining quality standards."
+      },
+      {
+        "icon": "⭐",
+        "title": "Quality Workmanship",
+        "text": "We use skilled professionals, proven methods, and quality materials to ensure long‑lasting results."
+      },
+      {
+        "icon": "👥",
+        "title": "Experienced Team",
+        "text": "Our engineers, project managers, procurement specialists, and technical staff work together to deliver successful outcomes."
+      },
+      {
+        "icon": "📍",
+        "title": "Local Knowledge",
+        "text": "As a proudly South Sudanese company, we understand the local environment, regulations, and operational challenges."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Safety & Compliance",
+        "text": "We prioritise workplace safety and operate in compliance with national regulations and industry standards."
+      },
+      {
+        "icon": "📋",
+        "title": "Fully Registered & Certified",
+        "text": "Registered with the appropriate government authorities and the United Nations Global Marketplace (UNGM), giving clients confidence in our credibility."
+      }
+    ]
+  },
+  "competitiveAdvantages": {
+    "eyebrow": "Why We Excel",
+    "title": "Our Competitive Advantages",
+    "description": "These strengths make us the right choice for your projects.",
+    "items": [
+      "11+ Years of Experience",
+      "Multi‑Sector Expertise",
+      "Nationwide Operations",
+      "Professional Team",
+      "Reliable Equipment",
+      "Strong Ethical Values",
+      "Client‑Focused Solutions",
+      "Sustainable Business Practices"
+    ]
+  },
+  "coreValues": {
+    "eyebrow": "What Drives Us",
+    "title": "Our Core Values",
+    "description": "These principles guide every decision and action.",
+    "items": [
+      {
+        "title": "Honesty",
+        "text": "We communicate openly and deliver on our commitments."
+      },
+      {
+        "title": "Integrity",
+        "text": "We uphold the highest ethical standards in every project."
+      },
+      {
+        "title": "Teamwork",
+        "text": "Collaboration enables us to achieve outstanding results."
+      },
+      {
+        "title": "Communication",
+        "text": "We keep clients informed throughout every stage of a project."
+      },
+      {
+        "title": "Love",
+        "text": "We care about our people, our clients, and the communities we serve."
+      }
+    ]
+  },
+  "commitment": {
+    "eyebrow": "Our Promise",
+    "title": "Our Commitment to Clients",
+    "text": "Every project is approached with professionalism, careful planning, and attention to detail. We strive to exceed expectations by delivering quality solutions on time and within agreed requirements."
+  },
+  "industries": {
+    "eyebrow": "Who We Partner With",
+    "title": "Industries We Serve",
+    "description": "We work across a wide spectrum of sectors.",
+    "items": [
+      {
+        "icon": "🏛️",
+        "title": "Government Institutions"
+      },
+      {
+        "icon": "🌐",
+        "title": "NGOs"
+      },
+      {
+        "icon": "🇺🇳",
+        "title": "UN Agencies"
+      },
+      {
+        "icon": "🤝",
+        "title": "Humanitarian Organizations"
+      },
+      {
+        "icon": "🏢",
+        "title": "Private Companies"
+      },
+      {
+        "icon": "🏗️",
+        "title": "Commercial Businesses"
+      },
+      {
+        "icon": "🏘️",
+        "title": "Community Organizations"
+      }
+    ]
+  },
+  "clientSatisfaction": {
+    "eyebrow": "Real Results",
+    "title": "Client Satisfaction",
+    "description": "We measure success by the trust our clients place in us.",
+    "items": [
+      "Long‑Term Relationships",
+      "Repeat Business",
+      "Reliable Service Delivery",
+      "Commitment to Continuous Improvement",
+      "Focus on Client Success"
+    ]
+  },
+  "certifications": {
+    "eyebrow": "Credentials",
+    "title": "Certifications & Compliance",
+    "description": "We are fully registered and certified, giving you peace of mind.",
+    "items": [
+      {
+        "icon": "fa-building",
+        "title": "Company Registration",
+        "text": "Registered under the laws of South Sudan."
+      },
+      {
+        "icon": "fa-globe",
+        "title": "UNGM Registration",
+        "text": "United Nations Global Marketplace – #389997."
+      },
+      {
+        "icon": "fa-file-lines",
+        "title": "Tax Compliance",
+        "text": "Valid Tax Compliance Certificate."
+      },
+      {
+        "icon": "fa-certificate",
+        "title": "Business Licences",
+        "text": "All necessary operational licences."
+      }
+    ]
+  },
+  "motto": {
+    "text": "Under Promise & Over Deliver",
+    "explanation": "This motto reflects our philosophy of making realistic commitments and consistently exceeding client expectations."
+  },
+  "callToAction": {
+    "title": "Ready to Work With a Trusted Partner?",
+    "text": "Whether you require construction, procurement, agriculture, or logistics services, Five Investment Limited is ready to deliver dependable solutions with professionalism and integrity.",
+    "button1Text": "Request a Quote",
+    "button2Text": "Contact Us"
+  }
+}

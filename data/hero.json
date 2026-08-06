@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "tagline": "★ Under Promise & Over Deliver ★",
+  "heading": "Building South Sudan\nThrough Investment & Innovation",
+  "subheading": "Five Investment Limited is a proudly South Sudanese-owned company delivering excellence in Construction, Procurement, Agriculture, Import/Export, and Light Agro-Industries across the nation.",
+  "backgroundImage": "/assets/five.jpg",
+  "stats": [
+    {
+      "number": "11+",
+      "label": "Years of Excellence"
+    },
+    {
+      "number": "5",
+      "label": "Investment Pillars"
+    },
+    {
+      "number": "100%",
+      "label": "Client Commitment"
+    }
+  ]
+}

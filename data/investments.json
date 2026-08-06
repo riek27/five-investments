@@ -1,0 +1,352 @@
+{
+  "hero": {
+    "eyebrow": "Our Investments",
+    "title": "Our Investment Sectors",
+    "subtitle": "Driving sustainable economic growth across South Sudan through strategic investments in infrastructure, agriculture, procurement, manufacturing, and trade.",
+    "backgroundImage": "/uploads/1786000564566-aroadagri.jpg"
+  },
+  "intro": {
+    "eyebrow": "Our Vision",
+    "title": "Investing in South Sudan's Future",
+    "text": "Five Investment Limited invests in key sectors that support economic development and improve the lives of communities throughout South Sudan. Our diversified investment strategy allows us to deliver sustainable solutions while creating long-term value for our partners and clients."
+  },
+  "pillars": {
+    "eyebrow": "Our Focus",
+    "title": "Our Five Investment Pillars",
+    "description": "We channel our expertise into five core sectors that drive growth.",
+    "items": [
+      {
+        "title": "Construction & Infrastructure",
+        "description": "Our construction division develops durable infrastructure that supports economic growth.",
+        "image": "/uploads/1786000213486-fivein.jpeg",
+        "list": [
+          "Roads",
+          "Bridges",
+          "Commercial Buildings",
+          "Residential Buildings",
+          "Public Infrastructure",
+          "Civil Engineering"
+        ]
+      },
+      {
+        "title": "Procurement & Supply Chain",
+        "description": "We provide end‑to‑end procurement and supply chain solutions.",
+        "image": "/uploads/1786000371769-elijah-mears-sI2eENXdoBI-unsplash.jpg",
+        "list": [
+          "Government Procurement",
+          "NGO Supplies",
+          "Medical Supplies",
+          "Office Equipment",
+          "Food Items",
+          "Non‑food Items",
+          "Logistics"
+        ]
+      },
+      {
+        "title": "Agriculture & Food Security",
+        "description": "We increase agricultural productivity through modern farming and food security programs.",
+        "image": "/uploads/1786000403230-aroadagri.jpg",
+        "list": [
+          "Commercial Farming",
+          "Seeds",
+          "Irrigation",
+          "Agricultural Equipment",
+          "Food Security Programs",
+          "Livestock Support"
+        ]
+      },
+      {
+        "title": "Import & Export",
+        "description": "We facilitate international trade and supply of machinery, materials, and equipment.",
+        "image": "/uploads/1786000460982-WhatsApp Image 2026-08-05 at 12.30.11 PM.jpeg",
+        "list": [
+          "Import of Machinery",
+          "Construction Materials",
+          "Agricultural Equipment",
+          "Export Opportunities",
+          "International Trade",
+          "Customs Support"
+        ]
+      },
+      {
+        "title": "Light Agro-Industries",
+        "description": "We add value to local produce through processing and small‑scale manufacturing.",
+        "image": "/uploads/1786000486035-aroadagr.jpg",
+        "list": [
+          "Food Processing",
+          "Grain Milling",
+          "Packaging",
+          "Value Addition",
+          "Small Manufacturing",
+          "Processing Facilities"
+        ]
+      }
+    ]
+  },
+  "additionalAreas": {
+    "eyebrow": "Beyond The Core",
+    "title": "Additional Investment Areas",
+    "description": "Exploring new frontiers for growth and development.",
+    "items": [
+      {
+        "icon": "⛏️",
+        "title": "Mining & Mineral Exploration",
+        "text": "Responsible resource development."
+      },
+      {
+        "icon": "🌿",
+        "title": "Environmental Protection",
+        "text": "Sustainable practices in every project."
+      },
+      {
+        "icon": "🏛️",
+        "title": "Tourism Development",
+        "text": "Building hospitality infrastructure."
+      },
+      {
+        "icon": "☀️",
+        "title": "Renewable Energy",
+        "text": "Clean energy for rural communities."
+      },
+      {
+        "icon": "🚚",
+        "title": "Transport Services",
+        "text": "Logistics and fleet management."
+      },
+      {
+        "icon": "🔧",
+        "title": "Equipment Leasing",
+        "text": "Modern equipment for local firms."
+      }
+    ]
+  },
+  "whyInvest": {
+    "eyebrow": "Impact",
+    "title": "Why We Invest",
+    "description": "Our investments are driven by a commitment to create lasting change.",
+    "items": [
+      {
+        "icon": "👷",
+        "title": "Job Creation",
+        "text": "Creating meaningful employment for South Sudanese."
+      },
+      {
+        "icon": "🌱",
+        "title": "Sustainable Development",
+        "text": "Projects that balance economic, social, and environmental needs."
+      },
+      {
+        "icon": "🤝",
+        "title": "Community Empowerment",
+        "text": "Strengthening local capacity and ownership."
+      },
+      {
+        "icon": "🏗️",
+        "title": "Local Capacity Building",
+        "text": "Training and skills transfer."
+      },
+      {
+        "icon": "📈",
+        "title": "Economic Growth",
+        "text": "Driving GDP and regional development."
+      },
+      {
+        "icon": "💡",
+        "title": "Innovation",
+        "text": "Introducing modern technology and methods."
+      }
+    ]
+  },
+  "approach": {
+    "eyebrow": "Process",
+    "title": "Investment Approach",
+    "description": "A proven methodology that ensures every project succeeds.",
+    "steps": [
+      {
+        "title": "Identify Opportunities",
+        "text": "Market research and stakeholder consultation."
+      },
+      {
+        "title": "Conduct Research",
+        "text": "Feasibility studies and risk assessment."
+      },
+      {
+        "title": "Strategic Planning",
+        "text": "Detailed project design and financial modelling."
+      },
+      {
+        "title": "Project Execution",
+        "text": "Implementation with quality control and timelines."
+      },
+      {
+        "title": "Monitoring & Evaluation",
+        "text": "Continuous tracking and impact assessment."
+      },
+      {
+        "title": "Sustainable Growth",
+        "text": "Scaling successful models for long‑term benefit."
+      }
+    ]
+  },
+  "featuredProjects": {
+    "eyebrow": "Portfolio",
+    "title": "Featured Projects",
+    "description": "A selection of projects we have delivered.",
+    "items": [
+      {
+        "image": "/uploads/1786000782435-fivein.jpeg",
+        "name": "Construction of Community Road",
+        "sector": "Infrastructure",
+        "location": "Juba",
+        "status": "Completed",
+        "description": "Built 12 km of all‑weather road connecting rural communities."
+      },
+      {
+        "image": "/uploads/1786000808979-fivein1.jpeg",
+        "name": "Supply of Agricultural Inputs",
+        "sector": "Agriculture",
+        "location": "Yei",
+        "status": "Completed",
+        "description": "Delivered seeds, tools, and fertiliser to 5,000 farmers."
+      },
+      {
+        "image": "/uploads/1786000821127-WhatsApp Image 2026-08-05 at 12.53.29 PM.jpeg",
+        "name": "Government Office Block",
+        "sector": "Construction",
+        "location": "Wau",
+        "status": "Completed",
+        "description": "Constructed a modern two‑storey office building."
+      },
+      {
+        "image": "/uploads/1786000833127-WhatsApp Image 2026-08-05 at 12.53.28 PM.jpeg",
+        "name": "NGO Logistics Support",
+        "sector": "Procurement",
+        "location": "Bor",
+        "status": "Completed",
+        "description": "Managed the supply chain for emergency relief items."
+      },
+      {
+        "image": "/uploads/1786000849539-WhatsApp Image 2026-08-05 at 12.30.12 PM.jpeg",
+        "name": "Farm Mechanisation Program",
+        "sector": "Agriculture",
+        "location": "Torit",
+        "status": "In Progress",
+        "description": "Providing tractors and training to farmer cooperatives."
+      },
+      {
+        "image": "/uploads/1786000864607-WhatsApp Image 2026-08-05 at 12.30.11 PM.jpeg",
+        "name": "Solar Water Pumping System",
+        "sector": "Renewable Energy",
+        "location": "Aweil",
+        "status": "In Progress",
+        "description": "Installing solar‑powered water systems for 10 villages."
+      }
+    ]
+  },
+  "impact": {
+    "eyebrow": "Results",
+    "title": "Investment Impact",
+    "description": "Our investments create measurable outcomes.",
+    "stats": [
+      {
+        "number": "11+",
+        "label": "Years Experience"
+      },
+      {
+        "number": "5",
+        "label": "Investment Sectors"
+      },
+      {
+        "number": "100%",
+        "label": "Commitment"
+      },
+      {
+        "number": "50+",
+        "label": "Projects Delivered"
+      },
+      {
+        "number": "20+",
+        "label": "Government & NGO Partnerships"
+      },
+      {
+        "number": "10",
+        "label": "States Covered"
+      }
+    ]
+  },
+  "partnerReasons": {
+    "eyebrow": "Advantages",
+    "title": "Why Partner With Us",
+    "description": "We bring more than just capital to the table.",
+    "items": [
+      {
+        "icon": "👥",
+        "title": "Experienced Team",
+        "text": "Skilled professionals with deep local knowledge."
+      },
+      {
+        "icon": "📍",
+        "title": "Strong Local Knowledge",
+        "text": "Navigating South Sudan’s unique business environment."
+      },
+      {
+        "icon": "🔍",
+        "title": "Transparent Operations",
+        "text": "Open books and ethical business practices."
+      },
+      {
+        "icon": "📜",
+        "title": "Legal Compliance",
+        "text": "Fully registered and tax compliant."
+      },
+      {
+        "icon": "✅",
+        "title": "Quality Assurance",
+        "text": "International standards in every delivery."
+      },
+      {
+        "icon": "🤝",
+        "title": "Long‑term Partnerships",
+        "text": "Building relationships that last beyond one project."
+      }
+    ]
+  },
+  "opportunities": {
+    "eyebrow": "Join Us",
+    "title": "Investment Opportunities",
+    "text": "Five Investment welcomes partnerships in infrastructure, agriculture, manufacturing, procurement, international trade, and public‑private partnerships.",
+    "buttonText": "Become a Partner"
+  },
+  "faq": {
+    "eyebrow": "Common Questions",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What sectors does Five Investment operate in?",
+        "answer": "We invest in construction, procurement, agriculture, import/export, light agro‑industries, and other areas such as mining, tourism, and renewable energy."
+      },
+      {
+        "question": "Can international organisations partner with Five Investment?",
+        "answer": "Yes. We welcome partnerships with international NGOs, government agencies, and private investors."
+      },
+      {
+        "question": "Do you work with NGOs?",
+        "answer": "Absolutely. We have a strong track record of supplying goods and services to humanitarian and development organisations."
+      },
+      {
+        "question": "Can you supply construction materials?",
+        "answer": "Yes. We import and distribute a wide range of construction materials including cement, steel, and timber."
+      },
+      {
+        "question": "Do you undertake nationwide projects?",
+        "answer": "We operate across all ten states of South Sudan and can scale to meet project needs anywhere in the country."
+      }
+    ]
+  },
+  "callToAction": {
+    "title": "Let's Build the Future Together",
+    "text": "Whether you're a government institution, NGO, investor, or private organisation, Five Investment Limited is ready to deliver reliable and sustainable investment solutions across South Sudan.",
+    "button1Text": "Request a Consultation",
+    "button2Text": "Contact Us"
+  }
+}
