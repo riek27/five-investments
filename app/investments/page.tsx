@@ -1,20 +1,11 @@
+import { kv } from '@vercel/kv';
 import Link from 'next/link';
 
-async function getInvestmentsData() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-  try {
-    const res = await fetch(`${baseUrl}/api/investments`, { cache: 'no-store' });
-    if (!res.ok) return null;
-    return res.json();
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
-}
+export const dynamic = 'force-dynamic';
 
 export default async function InvestmentsPage() {
-  const data = await getInvestmentsData();
-  if (!data) return <div style={{ padding: '80px', textAlign: 'center' }}>Error loading page</div>;
+  const data = await kv.get('investments');
+  if (!data) return <div>Error loading page</div>;
 
   const hero = data.hero || {};
   const intro = data.intro || {};

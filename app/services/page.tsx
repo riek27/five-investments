@@ -1,22 +1,15 @@
+import { kv } from '@vercel/kv';
 import Link from 'next/link';
 
-async function getServicesData() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-  try {
-    const res = await fetch(`${baseUrl}/api/services`, { cache: 'no-store' });
-    if (!res.ok) return null;
-    return res.json();
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
-}
+export const dynamic = 'force-dynamic';
 
 export default async function ServicesPage() {
-  const data = await getServicesData();
+  const data = await kv.get('services');
   if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 
   const hero = data.hero || {};
+  // … rest of JSX
+}
   const intro = data.intro || {};
   const services = data.services || {};
   const industries = data.industries || {};

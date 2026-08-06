@@ -1,19 +1,10 @@
+import { kv } from '@vercel/kv';
 import Link from 'next/link';
 
-async function getLegalData() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-  try {
-    const res = await fetch(`${baseUrl}/api/legal`, { cache: 'no-store' });
-    if (!res.ok) return null;
-    return res.json();
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
-}
+export const dynamic = 'force-dynamic';
 
 export default async function LegalPage() {
-  const data = await getLegalData();
+  const data = await kv.get('legal');
   if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 
   const hero = data.hero || {};

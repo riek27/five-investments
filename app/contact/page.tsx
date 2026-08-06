@@ -1,19 +1,10 @@
+import { kv } from '@vercel/kv';
 import Link from 'next/link';
 
-async function getContactData() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-  try {
-    const res = await fetch(`${baseUrl}/api/contact`, { cache: 'no-store' });
-    if (!res.ok) return null;
-    return res.json();
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
-}
+export const dynamic = 'force-dynamic';
 
 export default async function ContactPage() {
-  const data = await getContactData();
+  const data = await kv.get('contact-page');
   if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 
   const hero = data.hero || {};
@@ -141,7 +132,6 @@ export default async function ContactPage() {
                   <a href={`mailto:${contactInfo.emergencyEmail}`}>{contactInfo.emergencyEmail}</a>
                 </div>
               </div>
-              {/* WhatsApp Chat Button */}
               <a
                 href={`https://wa.me/${contactInfo.emergencyPhone?.replace(/\D/g, '')}`}
                 target="_blank"

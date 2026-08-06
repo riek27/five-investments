@@ -1,19 +1,10 @@
+import { kv } from '@vercel/kv';
 import Link from 'next/link';
 
-async function getWhyUsData() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-  try {
-    const res = await fetch(`${baseUrl}/api/whyus`, { cache: 'no-store' });
-    if (!res.ok) return null;
-    return res.json();
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
-}
+export const dynamic = 'force-dynamic';
 
 export default async function WhyUsPage() {
-  const data = await getWhyUsData();
+  const data = await kv.get('whyus');
   if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 
   const hero = data.hero || {};
