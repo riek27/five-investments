@@ -1,10 +1,11 @@
-import { kv } from '@vercel/kv';
+import { get } from '@vercel/global-config';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
 export default async function ServicesPage() {
-  const data: any = await kv.get('services');
+  const data: any = await get('services');
+
   if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 
   const hero = data.hero || {};
@@ -18,6 +19,7 @@ export default async function ServicesPage() {
 
   return (
     <>
+      {/* … keep the existing JSX exactly as is */}
       {/* Hero */}
       <section style={{
         backgroundImage: `url(${hero.backgroundImage || '/images/services-hero.jpg'})`,

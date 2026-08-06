@@ -1,10 +1,11 @@
-import { kv } from '@vercel/kv';
+import { get } from '@vercel/global-config';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
 export default async function ActivitiesPage() {
-  const data: any = await kv.get('activities');
+  const data: any = await get('activities');
+
   if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 
   const hero = data.hero || {};
@@ -20,6 +21,7 @@ export default async function ActivitiesPage() {
 
   return (
     <>
+      
       {/* ── Hero ── */}
       <section
         style={{

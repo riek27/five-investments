@@ -1,10 +1,10 @@
-import { kv } from '@vercel/kv';
+import { get } from '@vercel/global-config';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
 export default async function AboutPage() {
-  const data: any = await kv.get('about');
+  const data: any = await get('about');
 
   if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 
@@ -15,6 +15,7 @@ export default async function AboutPage() {
 
   return (
     <>
+      {/* … keep the existing JSX exactly as is */}
       {/* ═══════════════ PAGE HERO ═══════════════ */}
       <section
         style={{

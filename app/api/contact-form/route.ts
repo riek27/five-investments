@@ -1,18 +1,13 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import fs from 'fs';
-import path from 'path';
+import { get } from '@vercel/global-config';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-// Reads the recipient email from homepage.json (admin can change it)
-function getRecipientEmail(): string {
-  const dataPath = path.join(process.cwd(), 'data', 'homepage.json');
-  if (fs.existsSync(dataPath)) {
-    const data = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
-    return data?.contact?.email || 'info@fiveinvestment-ss.com';
-  }
-  return 'info@fiveinvestment-ss.com';
+// Helper: read the recipient email from the Global Config KV store
+async function getRecipientEmail(): Promise<string> {
+  const homepageData: any = await get('homepage');
+  return homepageData?.contact?.email || 'info@fiveinvestment-ss.com';
 }
 
 export async function POST(request: Request) {
@@ -24,10 +19,10 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Name and phone are required.' }, { status: 400 });
     }
 
-    const recipientEmail = getRecipientEmail();
+    const recipientEmail = await getRecipientEmail();
 
     await resend.emails.send({
-      from: 'onboarding@resend.dev',   // works instantly for testing
+      from: 'onboarding@resend.dev',   // change after domain verification
       to: recipientEmail,
       subject: subject || `New inquiry from ${name}`,
       html: `

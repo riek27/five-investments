@@ -1,27 +1,29 @@
-import { kv } from '@vercel/kv';
+import { get } from '@vercel/global-config';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
 export default async function InvestmentsPage() {
-  const data: any = await kv.get('investments');
-  if (!data) return <div>Error loading page</div>;
+  const data: any = await get('investments');
+
+  if (!data) return <div style={{ padding: 80, textAlign: 'center' }}>Error loading page</div>;
 
   const hero = data.hero || {};
   const intro = data.intro || {};
-  const pillars = data.pillars || [];
-  const additionalAreas = data.additionalAreas || [];
-  const whyInvest = data.whyInvest || [];
-  const approach = data.approach || [];
-  const featuredProjects = data.featuredProjects || [];
+  const pillars = data.pillars || {};
+  const additionalAreas = data.additionalAreas || {};
+  const whyInvest = data.whyInvest || {};
+  const approach = data.approach || {};
+  const featuredProjects = data.featuredProjects || {};
   const impact = data.impact || {};
-  const partnerReasons = data.partnerReasons || [];
+  const partnerReasons = data.partnerReasons || {};
   const opportunities = data.opportunities || {};
-  const faq = data.faq || [];
+  const faq = data.faq || {};
   const cta = data.callToAction || {};
 
   return (
     <>
+      {/* … keep the existing JSX exactly as is */}
       {/* ═══════════════ HERO ═══════════════ */}
       <section
         style={{

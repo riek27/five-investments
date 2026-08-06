@@ -11,11 +11,7 @@ export async function GET() {
 }
 
 export async function PUT(request: Request) {
-  try {
-    const body = await request.json();
-    await kv.set('homepage', body);
-    return NextResponse.json({ success: true });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
-  }
+  const body = await request.json();
+  await kv.set('homepage', body);
+  return NextResponse.json({ success: true });
 }
