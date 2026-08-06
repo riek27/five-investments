@@ -1,17 +1,17 @@
 import { NextResponse } from 'next/server';
-import { get, set } from '@vercel/global-config';
+import { kv } from '@vercel/kv';
 
 const defaultData = {
   hero: {}, about: {}, howWeWork: {}, callToAction: {}
 };
 
 export async function GET() {
-  const data = await get('about');
+  const data = await kv.get('about');
   return NextResponse.json(data || defaultData);
 }
 
 export async function PUT(request: Request) {
   const body = await request.json();
-  await set('about', body);
+  await kv.set('about', body);
   return NextResponse.json({ success: true });
 }

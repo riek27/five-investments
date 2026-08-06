@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { get, set } from '@vercel/global-config';
+import { kv } from '@vercel/kv';
 
 const defaultData = {
   hero: {}, intro: {}, whyClients: {}, competitiveAdvantages: {},
@@ -8,12 +8,12 @@ const defaultData = {
 };
 
 export async function GET() {
-  const data = await get('whyus');
+  const data = await kv.get('whyus');
   return NextResponse.json(data || defaultData);
 }
 
 export async function PUT(request: Request) {
   const body = await request.json();
-  await set('whyus', body);
+  await kv.set('whyus', body);
   return NextResponse.json({ success: true });
 }

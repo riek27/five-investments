@@ -1,19 +1,19 @@
 import { NextResponse } from 'next/server';
-import { get, set } from '@vercel/global-config';
+import { kv } from '@vercel/kv';
 
 const defaultData = {
   hero: {}, about: {}, services: {}, whyUs: {}, team: {}, legal: {}, contact: {}
 };
 
 export async function GET() {
-  const data = await get('homepage');
+  const data = await kv.get('homepage');
   return NextResponse.json(data || defaultData);
 }
 
 export async function PUT(request: Request) {
   try {
     const body = await request.json();
-    await set('homepage', body);
+    await kv.set('homepage', body);
     return NextResponse.json({ success: true });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
