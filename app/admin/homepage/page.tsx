@@ -333,52 +333,87 @@ export default function AdminHomepagePage() {
       )}
 
       {/* Legal Tab */}
-      {activeTab === 'legal' && (
-        <div>
-          <label>Eyebrow</label>
-          <input value={data.legal?.eyebrow} onChange={(e) => updateField('legal', 'eyebrow', e.target.value)} style={inputStyle} />
-          <label>Title</label>
-          <input value={data.legal?.title} onChange={(e) => updateField('legal', 'title', e.target.value)} style={inputStyle} />
-          <label>Description</label>
-          <textarea value={data.legal?.description} onChange={(e) => updateField('legal', 'description', e.target.value)} rows={3} style={inputStyle} />
+{/* Legal Tab */}
+{activeTab === 'legal' && (
+  <div>
+    <label style={{ display: 'block', marginBottom: 4, fontWeight: 600, fontSize: 14, color: 'var(--text)' }}>Eyebrow</label>
+    <input value={data.legal?.eyebrow} onChange={(e) => updateField('legal', 'eyebrow', e.target.value)} style={inputStyle} />
+    <label style={{ display: 'block', marginBottom: 4, fontWeight: 600, fontSize: 14, color: 'var(--text)' }}>Title</label>
+    <input value={data.legal?.title} onChange={(e) => updateField('legal', 'title', e.target.value)} style={inputStyle} />
+    <label style={{ display: 'block', marginBottom: 4, fontWeight: 600, fontSize: 14, color: 'var(--text)' }}>Description</label>
+    <textarea value={data.legal?.description} onChange={(e) => updateField('legal', 'description', e.target.value)} rows={3} style={inputStyle} />
 
-          <h4>Items</h4>
-          {(data.legal?.items || []).map((item: any, idx: number) => (
-            <div key={idx} style={{ border: '1px solid #ccc', borderRadius: '8px', padding: '10px', marginBottom: '10px' }}>
-              <input value={item.icon} onChange={(e) => handleArrayItemChange('legal', 'items', idx, 'icon', e.target.value)} placeholder="Icon (without fa-)" style={inputStyle} />
-              <input value={item.title} onChange={(e) => handleArrayItemChange('legal', 'items', idx, 'title', e.target.value)} placeholder="Title" style={inputStyle} />
-              <textarea value={item.text} onChange={(e) => handleArrayItemChange('legal', 'items', idx, 'text', e.target.value)} placeholder="Text" rows={3} style={inputStyle} />
-              <input value={item.number} onChange={(e) => handleArrayItemChange('legal', 'items', idx, 'number', e.target.value)} placeholder="Number/ID" style={inputStyle} />
-              <input value={item.file} onChange={(e) => handleArrayItemChange('legal', 'items', idx, 'file', e.target.value)} placeholder="File path (e.g., assets/profile1.jpg)" style={inputStyle} />
+    <h4 style={{ margin: '20px 0 10px' }}>Items</h4>
+    {(data.legal?.items || []).map((item: any, idx: number) => (
+      <div key={idx} style={{ border: '1px solid #ccc', borderRadius: '8px', padding: '10px', marginBottom: '10px' }}>
+        <input value={item.icon} onChange={(e) => handleArrayItemChange('legal', 'items', idx, 'icon', e.target.value)} placeholder="Icon (without fa-)" style={inputStyle} />
+        <input value={item.title} onChange={(e) => handleArrayItemChange('legal', 'items', idx, 'title', e.target.value)} placeholder="Title" style={inputStyle} />
+        <textarea value={item.text} onChange={(e) => handleArrayItemChange('legal', 'items', idx, 'text', e.target.value)} placeholder="Text" rows={3} style={inputStyle} />
+        <input value={item.number} onChange={(e) => handleArrayItemChange('legal', 'items', idx, 'number', e.target.value)} placeholder="Number/ID" style={inputStyle} />
 
-              {/* File upload button */}
-              <input
-                type="file"
-                onChange={async (e) => {
-                  const file = e.target.files?.[0];
-                  if (!file) return;
-                  const formData = new FormData();
-                  formData.append('file', file);
-                  try {
-                    const res = await fetch('/api/upload', { method: 'POST', body: formData });
-                    const result = await res.json();
-                    if (result.url) {
-                      handleArrayItemChange('legal', 'items', idx, 'file', result.url);
-                      setMessage('File uploaded!');
-                    }
-                  } catch (err) {
+        {/* File upload with unique ID */}
+        <div style={{ marginBottom: '8px' }}>
+          <label style={{ display: 'block', marginBottom: 4, fontWeight: 600, fontSize: 14, color: 'var(--text)' }}>File path / Upload</label>
+          <div style={{ display: 'flex', gap: '10px', marginBottom: '8px' }}>
+            <input
+              value={item.file}
+              onChange={(e) => handleArrayItemChange('legal', 'items', idx, 'file', e.target.value)}
+              placeholder="File URL"
+              style={{ ...inputStyle, flex: 1, marginBottom: 0 }}
+            />
+            <input
+              type="file"
+              id={`legal-file-${idx}`}
+              style={{ display: 'none' }}
+              onChange={async (e) => {
+                const file = e.target.files?.[0];
+                if (!file) return;
+                const formData = new FormData();
+                formData.append('file', file);
+                try {
+                  const res = await fetch('/api/upload', { method: 'POST', body: formData });
+                  const result = await res.json();
+                  if (result.url) {
+                    handleArrayItemChange('legal', 'items', idx, 'file', result.url);
+                    setMessage('File uploaded! Click Save to keep it.');
+                  } else {
                     setMessage('Upload failed');
                   }
-                }}
-                style={{ marginTop: '8px' }}
-              />
-
-              <button onClick={() => handleArrayRemove('legal', 'items', idx)}>Remove</button>
-            </div>
-          ))}
-          <button onClick={() => handleArrayAdd('legal', 'items', { icon: '', title: '', text: '', number: '', file: '' })}>+ Add Item</button>
+                } catch {
+                  setMessage('Upload failed');
+                }
+              }}
+            />
+            <button
+              type="button"
+              onClick={() => document.getElementById(`legal-file-${idx}`)?.click()}
+              style={{
+                border: '1.5px solid var(--primary)',
+                color: 'var(--primary)',
+                background: 'white',
+                padding: '8px 16px',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                fontWeight: 600,
+                whiteSpace: 'nowrap',
+              }}
+            >
+              Upload File
+            </button>
+          </div>
+          {item.file && (
+            <p style={{ fontSize: '13px', color: 'var(--muted)' }}>
+              Current file: <a href={item.file} target="_blank" rel="noreferrer">{item.file}</a>
+            </p>
+          )}
         </div>
-      )}
+
+        <button onClick={() => handleArrayRemove('legal', 'items', idx)} style={{ color: 'red', background: 'none', border: 'none', cursor: 'pointer' }}>Remove</button>
+      </div>
+    ))}
+    <button onClick={() => handleArrayAdd('legal', 'items', { icon: '', title: '', text: '', number: '', file: '' })} className="btn-outline" style={{ marginTop: '8px', borderColor: 'var(--primary)', color: 'var(--primary)', background: 'white' }}>+ Add Item</button>
+  </div>
+)}
 
       <button onClick={handleSave} className="btn-primary" style={{ marginTop: '20px', width: '100%', padding: '14px', fontSize: '15px' }}>
         Save Homepage

@@ -64,7 +64,7 @@ export default function Scripts() {
       anchor.addEventListener('click', handleSmoothScroll);
     });
 
-    // ── Contact form submit (to /api/contact-form) ──
+    // ── Contact form submit (via Web3Forms) ──
     const contactForm = document.getElementById('contactForm') as HTMLFormElement | null;
     if (contactForm) {
       contactForm.addEventListener('submit', async (e) => {
@@ -73,8 +73,9 @@ export default function Scripts() {
         if (!btn) return;
 
         const formData = new FormData(contactForm);
-        // Gather all possible fields from the form (works for both homepage and contact page)
+        // Build the payload with all form fields + the Web3Forms access key
         const payload = {
+          access_key: 'd044c4e8-a34b-4800-be0d-f56824ca4f13',
           name: formData.get('name') as string,
           phone: formData.get('phone') as string,
           email: formData.get('email') as string,
@@ -89,7 +90,7 @@ export default function Scripts() {
         btn.style.background = 'var(--primary-dark)';
 
         try {
-          const res = await fetch('/api/contact-form', {   // <-- corrected URL
+          const res = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),
@@ -104,24 +105,18 @@ export default function Scripts() {
               contactForm.reset();
             }, 2500);
           } else {
-            // Try to get error message from API
-            let errorMsg = '✕ Failed – Try Again';
-            try {
-              const errorData = await res.json();
-              errorMsg = '✕ ' + (errorData.error || 'Failed');
-            } catch {}
-            btn.textContent = errorMsg;
+            btn.textContent = '✕ Failed – Try Again';
             setTimeout(() => {
               btn.textContent = originalText;
               btn.style.background = '';
-            }, 3000);
+            }, 2500);
           }
         } catch (err) {
           btn.textContent = '✕ Network Error';
           setTimeout(() => {
             btn.textContent = originalText;
             btn.style.background = '';
-          }, 3000);
+          }, 2500);
         }
       });
     }

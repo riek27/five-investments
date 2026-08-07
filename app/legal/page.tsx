@@ -171,27 +171,7 @@ export default async function LegalPage() {
         </div>
       </section>
 
-      {/* Company Policies (Downloadable Cards) */}
-      <section style={{ background: 'var(--bg)' }}>
-        <div className="reveal" style={{ textAlign: 'center', marginBottom: 44 }}>
-          <span className="eyebrow">{companyPolicies.eyebrow}</span>
-          <h2 className="section-title">{companyPolicies.title}</h2>
-          <p className="section-sub">{companyPolicies.description}</p>
-        </div>
-        <div className="grid-4">
-          {(companyPolicies.items || []).map((item: any, idx: number) => (
-            <div key={idx} className="card reveal text-center" style={{ borderTop: '4px solid var(--gold)' }}>
-              <span style={{ fontSize: 28, display: 'block', marginBottom: 10 }}>📄</span>
-              <h4 style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 700, fontSize: 16, marginBottom: 12 }}>{item.title}</h4>
-              <a href={item.file} download className="btn-download" style={{
-                display: 'inline-flex', alignItems: 'center', gap: 8,
-                padding: '8px 18px', borderRadius: '999px', background: 'var(--primary)',
-                color: 'white', fontSize: 13, fontWeight: 600, textDecoration: 'none',
-              }}><i className="fa-solid fa-download"></i> Download</a>
-            </div>
-          ))}
-        </div>
-      </section>
+      
 
       {/* FAQ */}
       <section className="section-light">
@@ -212,27 +192,7 @@ export default async function LegalPage() {
         </div>
       </section>
 
-      {/* Download Center */}
-      <section style={{ background: 'var(--bg)' }}>
-        <div className="reveal" style={{ textAlign: 'center', marginBottom: 44 }}>
-          <span className="eyebrow">{downloadCenter.eyebrow}</span>
-          <h2 className="section-title">{downloadCenter.title}</h2>
-          <p className="section-sub">{downloadCenter.description}</p>
-        </div>
-        <div className="grid-4">
-          {(downloadCenter.items || []).map((item: any, idx: number) => (
-            <div key={idx} className="card reveal text-center" style={{ borderBottom: '4px solid var(--primary)' }}>
-              <span style={{ fontSize: 28, display: 'block', marginBottom: 10 }}>📁</span>
-              <h4 style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 700, fontSize: 16, marginBottom: 12 }}>{item.title}</h4>
-              <a href={item.file} download className="btn-download" style={{
-                display: 'inline-flex', alignItems: 'center', gap: 8,
-                padding: '8px 18px', borderRadius: '999px', background: 'var(--primary)',
-                color: 'white', fontSize: 13, fontWeight: 600, textDecoration: 'none',
-              }}><i className="fa-solid fa-download"></i> Download</a>
-            </div>
-          ))}
-        </div>
-      </section>
+      
 
       {/* Contact for Verification */}
       <section className="section-dark" style={{ textAlign: 'center', padding: '80px 30px' }}>

@@ -105,10 +105,10 @@ export default function AdminLegalPage() {
   });
 
   const tabs = [
-    'hero', 'intro', 'legalDocs', 'companyRegistrations', 'complianceStandards',
-    'procurementStandards', 'hseCommitment', 'corporateGovernance', 'companyPolicies',
-    'faq', 'downloadCenter', 'contactVerification'
-  ];
+  'hero', 'intro', 'legalDocs', 'companyRegistrations', 'complianceStandards',
+  'procurementStandards', 'hseCommitment', 'corporateGovernance',
+  'faq', 'contactVerification'
+];
 
   return (
     <div>
@@ -325,100 +325,7 @@ export default function AdminLegalPage() {
         </div>
       )}
 
-      {activeTab === 'companyPolicies' && (
-  <div>
-    <label style={labelStyle}>Eyebrow</label>
-    <input value={data.companyPolicies?.eyebrow} onChange={(e) => updateField('companyPolicies', 'eyebrow', e.target.value)} style={inputStyle} />
-    <label style={labelStyle}>Title</label>
-    <input value={data.companyPolicies?.title} onChange={(e) => updateField('companyPolicies', 'title', e.target.value)} style={inputStyle} />
-    <label style={labelStyle}>Description</label>
-    <textarea value={data.companyPolicies?.description} onChange={(e) => updateField('companyPolicies', 'description', e.target.value)} rows={2} style={inputStyle} />
-
-    <h4 style={{ margin: '20px 0 10px' }}>Policy Cards</h4>
-    {(data.companyPolicies?.items || []).map((item: any, idx: number) => (
-      <div key={idx} style={{ border: '1px solid #ccc', borderRadius: '8px', padding: '10px', marginBottom: '16px' }}>
-        <input
-          value={item.title}
-          onChange={(e) => handleArrayItemChange('companyPolicies', 'items', idx, 'title', e.target.value)}
-          placeholder="Policy Title"
-          style={inputStyle}
-        />
-
-        {/* File upload with unique ID */}
-        <label style={labelStyle}>File path / Upload</label>
-        <div style={{ display: 'flex', gap: '10px', marginBottom: '8px' }}>
-          <input
-            value={item.file}
-            onChange={(e) => handleArrayItemChange('companyPolicies', 'items', idx, 'file', e.target.value)}
-            placeholder="File URL"
-            style={{ ...inputStyle, flex: 1, marginBottom: 0 }}
-          />
-          <input
-            type="file"
-            id={`policy-file-${idx}`}
-            style={{ display: 'none' }}
-            onChange={(e) => {
-              const file = e.target.files?.[0];
-              if (!file) return;
-              const formData = new FormData();
-              formData.append('file', file);
-              fetch('/api/upload', { method: 'POST', body: formData })
-                .then((res) => res.json())
-                .then((result) => {
-                  if (result.url) {
-                    handleArrayItemChange('companyPolicies', 'items', idx, 'file', result.url);
-                    setMessage('File uploaded! Click Save to keep it.');
-                  }
-                })
-                .catch(() => setMessage('Upload failed.'));
-            }}
-          />
-          <button
-            type="button"
-            onClick={() => document.getElementById(`policy-file-${idx}`)?.click()}
-            style={{
-              border: '1.5px solid var(--primary)',
-              color: 'var(--primary)',
-              background: 'white',
-              padding: '8px 16px',
-              borderRadius: '8px',
-              cursor: 'pointer',
-              fontWeight: 600,
-              whiteSpace: 'nowrap',
-            }}
-          >
-            Upload File
-          </button>
-        </div>
-
-        {item.file && (
-          <p style={{ fontSize: '13px', color: 'var(--muted)', marginBottom: '8px' }}>
-            Current file: <a href={item.file} target="_blank" style={{ color: 'var(--primary)' }}>{item.file}</a>
-          </p>
-        )}
-
-        <button
-          onClick={() => handleArrayRemove('companyPolicies', 'items', idx)}
-          style={{ color: 'red', background: 'none', border: 'none', cursor: 'pointer' }}
-        >
-          Remove
-        </button>
-      </div>
-    ))}
-    <button
-      onClick={() => handleArrayAdd('companyPolicies', 'items', { title: '', file: '' })}
-      className="btn-outline"
-      style={{
-        marginTop: '8px',
-        borderColor: 'var(--primary)',
-        color: 'var(--primary)',
-        background: 'white',
-      }}
-    >
-      + Add Policy
-    </button>
-  </div>
-)}
+      
 
       {activeTab === 'faq' && (
         <div>
@@ -438,100 +345,7 @@ export default function AdminLegalPage() {
         </div>
       )}
 
-      {activeTab === 'downloadCenter' && (
-  <div>
-    <label style={labelStyle}>Eyebrow</label>
-    <input value={data.downloadCenter?.eyebrow} onChange={(e) => updateField('downloadCenter', 'eyebrow', e.target.value)} style={inputStyle} />
-    <label style={labelStyle}>Title</label>
-    <input value={data.downloadCenter?.title} onChange={(e) => updateField('downloadCenter', 'title', e.target.value)} style={inputStyle} />
-    <label style={labelStyle}>Description</label>
-    <textarea value={data.downloadCenter?.description} onChange={(e) => updateField('downloadCenter', 'description', e.target.value)} rows={2} style={inputStyle} />
-
-    <h4 style={{ margin: '20px 0 10px' }}>Download Items</h4>
-    {(data.downloadCenter?.items || []).map((item: any, idx: number) => (
-      <div key={idx} style={{ border: '1px solid #ccc', borderRadius: '8px', padding: '10px', marginBottom: '16px' }}>
-        <input
-          value={item.title}
-          onChange={(e) => handleArrayItemChange('downloadCenter', 'items', idx, 'title', e.target.value)}
-          placeholder="Item Title"
-          style={inputStyle}
-        />
-
-        {/* File upload with unique ID */}
-        <label style={labelStyle}>File path / Upload</label>
-        <div style={{ display: 'flex', gap: '10px', marginBottom: '8px' }}>
-          <input
-            value={item.file}
-            onChange={(e) => handleArrayItemChange('downloadCenter', 'items', idx, 'file', e.target.value)}
-            placeholder="File URL"
-            style={{ ...inputStyle, flex: 1, marginBottom: 0 }}
-          />
-          <input
-            type="file"
-            id={`download-file-${idx}`}
-            style={{ display: 'none' }}
-            onChange={(e) => {
-              const file = e.target.files?.[0];
-              if (!file) return;
-              const formData = new FormData();
-              formData.append('file', file);
-              fetch('/api/upload', { method: 'POST', body: formData })
-                .then((res) => res.json())
-                .then((result) => {
-                  if (result.url) {
-                    handleArrayItemChange('downloadCenter', 'items', idx, 'file', result.url);
-                    setMessage('File uploaded! Click Save to keep it.');
-                  }
-                })
-                .catch(() => setMessage('Upload failed.'));
-            }}
-          />
-          <button
-            type="button"
-            onClick={() => document.getElementById(`download-file-${idx}`)?.click()}
-            style={{
-              border: '1.5px solid var(--primary)',
-              color: 'var(--primary)',
-              background: 'white',
-              padding: '8px 16px',
-              borderRadius: '8px',
-              cursor: 'pointer',
-              fontWeight: 600,
-              whiteSpace: 'nowrap',
-            }}
-          >
-            Upload File
-          </button>
-        </div>
-
-        {item.file && (
-          <p style={{ fontSize: '13px', color: 'var(--muted)', marginBottom: '8px' }}>
-            Current file: <a href={item.file} target="_blank" style={{ color: 'var(--primary)' }}>{item.file}</a>
-          </p>
-        )}
-
-        <button
-          onClick={() => handleArrayRemove('downloadCenter', 'items', idx)}
-          style={{ color: 'red', background: 'none', border: 'none', cursor: 'pointer' }}
-        >
-          Remove
-        </button>
-      </div>
-    ))}
-    <button
-      onClick={() => handleArrayAdd('downloadCenter', 'items', { title: '', file: '' })}
-      className="btn-outline"
-      style={{
-        marginTop: '8px',
-        borderColor: 'var(--primary)',
-        color: 'var(--primary)',
-        background: 'white',
-      }}
-    >
-      + Add Download
-    </button>
-  </div>
-)}
+      
 
       {activeTab === 'contactVerification' && (
         <div>

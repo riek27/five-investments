@@ -39,7 +39,7 @@ export default function Header() {
           <div className="logo-mark">
             <img src="/images/fivelogo.jpeg" alt="Five Investment Limited Logo" />
           </div>
-          <span>Five Investment</span>
+          <span>Five Investment Limited</span>
         </Link>
 
         <ul className="nav-links">
