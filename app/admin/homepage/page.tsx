@@ -248,35 +248,35 @@ export default function AdminHomepagePage() {
       )}
 
       {/* Services Tab */}
-      {activeTab === 'services' && (
-        <div>
-          <label>Eyebrow</label>
-          <input value={data.services?.eyebrow} onChange={(e) => updateField('services', 'eyebrow', e.target.value)} style={inputStyle} />
-          <label>Title</label>
-          <input value={data.services?.title} onChange={(e) => updateField('services', 'title', e.target.value)} style={inputStyle} />
-          <label>Description</label>
-          <textarea value={data.services?.description} onChange={(e) => updateField('services', 'description', e.target.value)} rows={3} style={inputStyle} />
+{activeTab === 'services' && (
+  <div>
+    <label>Eyebrow</label>
+    <input value={data.services?.eyebrow} onChange={(e) => updateField('services', 'eyebrow', e.target.value)} style={inputStyle} />
+    <label>Title</label>
+    <input value={data.services?.title} onChange={(e) => updateField('services', 'title', e.target.value)} style={inputStyle} />
+    <label>Description</label>
+    <textarea value={data.services?.description} onChange={(e) => updateField('services', 'description', e.target.value)} rows={3} style={inputStyle} />
 
-          {['construction', 'procurement', 'agriculture', 'other'].map((cat) => (
-            <div key={cat} style={{ marginBottom: '24px' }}>
-              <h4>{cat.charAt(0).toUpperCase() + cat.slice(1)}</h4>
-              <label>Title</label>
-              <input
-                value={data.services?.[cat]?.title}
-                onChange={(e) => updateNestedField('services', cat, 'title', e.target.value)}
-                style={inputStyle}
-              />
-              <label>Items (one per line)</label>
-              <textarea
-                value={data.services?.[cat]?.items?.join('\n')}
-                onChange={(e) => updateNestedField('services', cat, 'items', e.target.value.split('\n'))}
-                rows={6}
-                style={inputStyle}
-              />
-            </div>
-          ))}
-        </div>
-      )}
+    {['mining', 'construction', 'procurement', 'agriculture', 'other'].map((cat) => (
+      <div key={cat} style={{ marginBottom: '24px' }}>
+        <h4>{cat === 'mining' ? 'Mining & Mineral' : cat.charAt(0).toUpperCase() + cat.slice(1)}</h4>
+        <label>Title</label>
+        <input
+          value={data.services?.[cat]?.title}
+          onChange={(e) => updateNestedField('services', cat, 'title', e.target.value)}
+          style={inputStyle}
+        />
+        <label>Items (one per line)</label>
+        <textarea
+          value={data.services?.[cat]?.items?.join('\n')}
+          onChange={(e) => updateNestedField('services', cat, 'items', e.target.value.split('\n'))}
+          rows={6}
+          style={inputStyle}
+        />
+      </div>
+    ))}
+  </div>
+)}
 
       {/* Why Us Tab */}
       {activeTab === 'whyUs' && (
